@@ -11,7 +11,7 @@
     </div>
     <script>
       function moveDodgerRight(){
-        var right_values = parseInt(dodger.style.right.match([0-9]+),10)
+        var right_values = parseInt(dodger.style.right.match(\d+),10)
 
         if (right > 0){
           dodger.style.right = `${right_values-1}px`
